@@ -1,4 +1,5 @@
 import ActionCard from "./Card";
+import Box from '@mui/material/Box';
 import './Home.css'
 
 export const Home = () => {
@@ -37,10 +38,22 @@ export const Home = () => {
         
     ];
     return (
-        <div className={'Homebar'}>
+        // <div className={'Homebar'}>
+           <Box sx={{
+        margin:'20px',
+        padding:'20px',
+        width: 1200,
+        height: 800,
+        backgroundColor: '#202842',
+        display:"flex",
+        flexWrap: "no-wrap",
+        justifyContent: 'flex-start',
+        alignItems: 'center'
+        }}>
             {mainServices.map((service)=> {
                 return <div><ActionCard name={service.name} imageUrl={service.imageUrl} description={service.description}/></div>
             })}
-        </div>
+           </Box>
+        // </div>
     );
 };
