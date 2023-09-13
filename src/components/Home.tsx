@@ -1,5 +1,5 @@
 import ActionCard from "./Card";
-
+import './Home.css'
 
 export const Home = () => {
     const mainServices = [
@@ -37,9 +37,9 @@ export const Home = () => {
         
     ];
     return (
-        <div>
+        <div className={'Homebar'}>
             {mainServices.map((service)=> {
-                return <><ActionCard name={service.name} imageUrl={service.imageUrl} description={service.description}/></>
+                return <div><ActionCard name={service.name} imageUrl={service.imageUrl} description={service.description}/></div>
             })}
         </div>
     );

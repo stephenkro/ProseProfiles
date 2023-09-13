@@ -8,9 +8,9 @@ function App() {
   return (
     <div className="App">
         <Navbar/>
-      <header className="App-header">
+     <div>
      <RoutesHandler/>
-      </header>
+     </div>
     </div>
   );
 }

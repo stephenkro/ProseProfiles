@@ -1,0 +1,7 @@
+.Homebar {
+   display:flex;
+   background-color: #61dafb;
+   margin: 20px;
+   overflow-x: auto;
+   flex-wrap: nowrap;
+}
