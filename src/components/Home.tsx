@@ -40,7 +40,8 @@ export const Home = () => {
     return (
         // <div className={'Homebar'}>
            <Box sx={{
-        marginTop:'50px',
+        marginTop:'100px',
+        borderRadius: '15px',
         marginRight:'20px',
         padding:'20px',
         width: '100%',
