@@ -40,15 +40,18 @@ export const Home = () => {
     return (
         // <div className={'Homebar'}>
            <Box sx={{
-        margin:'20px',
+        marginTop:'50px',
+        marginRight:'20px',
         padding:'20px',
-        width: 1200,
-        height: 800,
+        width: '100%',
+        height: '60%',
         backgroundColor: '#202842',
         display:"flex",
-        flexWrap: "no-wrap",
-        justifyContent: 'flex-start',
-        alignItems: 'center'
+        flexWrap: "nowrap",
+        overflow: "auto",
+        flexGrow: 2,
+        alignItems: 'center',
+        
         }}>
             {mainServices.map((service)=> {
                 return <div><ActionCard name={service.name} imageUrl={service.imageUrl} description={service.description}/></div>
