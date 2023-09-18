@@ -44,7 +44,6 @@ export const Home = () => {
             </div>
             <Box
                 sx={{
-                    // marginTop:'100px',
                     borderRadius: "15px",
                     marginRight: "20px",
                     padding: "20px",
@@ -54,13 +53,13 @@ export const Home = () => {
                     display: "flex",
                     flexWrap: "nowrap",
                     overflow: "auto",
-                    flexGrow: 2,
+                    // flexGrow: 2,
                     alignItems: "center",
                 }}
             >
                 {mainServices.map((service) => {
                     return (
-                        <div>
+                        <div key={service.name}>
                             <ActionCard
                                 name={service.name}
                                 imageUrl={service.imageUrl}

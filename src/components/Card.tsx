@@ -6,9 +6,9 @@ import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 
 export default function ActionCard(props: any) {
-  const handleClick = () => {
-    console.log('CLICK FUNCTION HERE')
-  }
+    const handleClick = () => {
+        console.log("CLICK FUNCTION HERE");
+    };
     return (
         <CardActionArea onClick={handleClick}>
             <Card
@@ -20,6 +20,8 @@ export default function ActionCard(props: any) {
                     margin: "10px",
                     overflow: "auto",
                     color: "#009AF0",
+                    transition: "transform 0.15s ease-in-out",
+                    "&:hover": { transform: "scale3d(1.05, 1.05, 1)" },
                 }}
             >
                 <CardMedia
@@ -29,7 +31,12 @@ export default function ActionCard(props: any) {
                     alt="pic"
                 />
                 <CardContent>
-                    <Typography gutterBottom variant="h5" component="div" fontWeight={700}>
+                    <Typography
+                        gutterBottom
+                        variant="h5"
+                        component="div"
+                        fontWeight={700}
+                    >
                         {props.name}
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
