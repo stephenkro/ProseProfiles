@@ -39,6 +39,7 @@ export const Navbar = () => {
     };
 
     return (
+        <>
         <AppBar position="fixed">
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
@@ -128,5 +129,7 @@ export const Navbar = () => {
                 </Toolbar>
             </Container>
         </AppBar>
+        <Toolbar/>
+        </>
     );
 };

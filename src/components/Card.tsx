@@ -13,7 +13,7 @@ export default function ActionCard(props: any) {
         <CardActionArea onClick={handleClick}>
             <Card
                 sx={{
-                    minHeight: 550,
+                    minHeight: 500,
                     maxHeight: 700,
                     maxWidth: 700,
                     minWidth: 300,

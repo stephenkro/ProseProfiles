@@ -1,7 +1,23 @@
 .Homebar {
-   /* display:flex;
-   background-color: #61dafb;
-   margin: 20px;
-   overflow-x: auto;
-   flex-wrap: nowrap; */
+   display:flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: flex-start;
+   background-color: #1244E5;
+   
+}
+
+.Homebar > img {
+    /* position: fixed; */
+    width: 100%;
+    height:500px;
+}
+.Home-header {
+    background-image: linear-gradient(black, #1244E5);
+    width:100%
+}
+
+.Homebar > div > h1 {
+    margin-left:30px;
+    color: #e5b509
 }
