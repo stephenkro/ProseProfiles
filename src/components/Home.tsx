@@ -38,7 +38,7 @@ export const Home = () => {
     ];
     return (
         <div className="Homebar">
-            <img src="/MainHomeImg.jpg" alt="HomeScreen" />
+            <img src="/TypeWriterImg.jpg" alt="HomeScreen" />
             <div className="Home-header">
             <h1>PICK YOUR PROFILE</h1>
             </div>
